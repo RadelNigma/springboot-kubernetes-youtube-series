@@ -23,5 +23,5 @@ public class Bookmark {
     private String title;
     @Column(nullable = false)
     private String url;
-    private Instant creatAt;
+    private Instant createdAt;
 }
