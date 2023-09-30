@@ -122,7 +122,6 @@
 						<image>radelnigma/bookmarker-api-jib</image>
 						<tags>
 							<tag>latest</tag>
-							<tag>0.0.1</tag>
 						</tags>
 					</to>
 					<container>
