@@ -13,7 +13,7 @@ public class BookmarksDTO {
     private List<BookmarkDTO> data;
     private long totalElements;
     private int totalPages;
-    private int currentPages;
+    private int currentPage;
     @JsonProperty("isFirst")
     private boolean isFirst;
     @JsonProperty("isLast")
@@ -25,7 +25,7 @@ public class BookmarksDTO {
         this.setData(bookmarkPage.getContent());
         this.setTotalElements(bookmarkPage.getTotalElements());
         this.setTotalPages(bookmarkPage.getTotalPages());
-        this.setCurrentPages(bookmarkPage.getNumber() + 1);
+        this.setCurrentPage(bookmarkPage.getNumber() + 1);
         this.setFirst(bookmarkPage.isFirst());
         this.setLast(bookmarkPage.isLast());
         this.setHasNext(bookmarkPage.hasNext());

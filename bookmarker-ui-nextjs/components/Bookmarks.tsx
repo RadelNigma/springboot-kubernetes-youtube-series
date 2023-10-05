@@ -1,5 +1,7 @@
 import React from "react";
 import {BookmarksResponse} from "@/services/models";
+import Bookmark from "@/components/Bookmark";
+import Pagination from "@/components/Pagination";
 
 interface BookmarksProps {
     bookmarks: BookmarksResponse
@@ -7,7 +9,8 @@ interface BookmarksProps {
 
 const Bookmarks: React.FC<BookmarksProps> = ({bookmarks})=> (
     <div>
-        {bookmarks.data.map(bookmark => <h2>{bookmark.title}</h2>)}
+        <Pagination bookmarks={bookmarks}/>
+        {bookmarks.data.map(bookmark => <Bookmark key={bookmark.id} bookmark={bookmark}/>)}
     </div>
 );
 

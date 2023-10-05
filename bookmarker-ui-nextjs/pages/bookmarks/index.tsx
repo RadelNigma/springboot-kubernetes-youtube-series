@@ -10,7 +10,6 @@ interface HomeProps {
 const Home: NextPage<HomeProps> = (props) => {
     return (
         <div>
-            <h1>Welcome to Bookmarker</h1>
             <Bookmarks bookmarks={props.bookmarks}/>
         </div>
     )
