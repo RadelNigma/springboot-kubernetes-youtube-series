@@ -13,8 +13,6 @@ const Bookmark: React.FC<BookmarkProps> = ({bookmark}) => (
                    <a target={"_blank"} className={'text-decoration-none'}>{bookmark.title}</a>
                </Link>
             </h5>
-        {/*<h2>{bookmark.title}</h2>*/}
-        {/*<h2>{bookmark.url}</h2>*/}
     </div>
     </div>
 )
